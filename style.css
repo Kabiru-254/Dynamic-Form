@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    transition: .5s;
+}
+body{
+    background-color: #553939;
+}
+
+header {
+    border-radius: 5px;
+    margin: 50px 200px 20px;
+    padding: 10px;
+    text-align: center;
+    color: #472D2D;
+    background-color: white;
+}
+.container{
+    border-radius: 5px;
+    margin: 0px 200px;
+    background-color: white;
+    
+}
+.container form{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    align-items: center;
+    flex-direction: column;
+    
+}
+form .heading{
+    display: flex;
+    flex-direction:row;
+    border: 1px solid black;
+    width: 80%;
+    align-items: center;
+    padding: 10px;
+    justify-content: space-between;
+    background-color: #A77979;
+}
+form .row{
+    
+    border-right: 1px solid #A77979;
+    border-left: 1px solid #A77979;
+    padding: 10px;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+form #addFields{
+    width: 150px;
+    border: 1px solid transparent;
+    padding: 5px;
+    background-color: #704F4F;
+    color: white;
+    border-radius: 5px;
+    font-size: normal;
+    cursor: pointer;
+}
+form #addFields:hover{
+    background-color: white;
+    color: #704F4F;
+    border: 1px solid #472D2D;
+}
+form #RemoveField{
+    width: 150px;
+    border: 1px solid transparent;
+    padding: 5px;
+    background-color: #704F4F;
+    color: white;
+    border-radius: 5px;
+    font-size: normal;
+    cursor: pointer;
+}
+form #RemoveField:hover{
+    background-color: white;
+    color: #704F4F;
+    border: 1px solid #472D2D;
+}
+form #submit{
+    width: 150px;
+    border: 1px solid transparent;
+    padding: 5px;
+    background-color: #704F4F;
+    color: white;
+    border-radius: 5px;
+    font-size: normal;
+    cursor: pointer;
+    margin-top: 30px;
+}
+form #submit:hover{
+    background-color: white;
+    color: #704F4F;
+    border: 1px solid #472D2D;
+}
+
+.row input, .row select{
+    padding: 5px;
+    width: 150px;
+    border: 1px solid #472D2D;
+    background-color: rgba(235, 229, 229, 0.863);
+    
+}
+
+.row select option{
+    cursor: pointer;
+    color: #472D2D;
+    background-color: white;
+}
+input:focus{
+    outline: none;
+    background-color: white;
+}
+
+.row a{
+    font-size: 30px;
+    margin-right: 15px;
+    color: red;
+    font-style: bold;
+    cursor: pointer;
+}
+#disabled{
+    color: grey;
+}
+
+textarea{
+    padding: 5px;
+}

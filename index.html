@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/js/all.min.js" integrity="sha512-naukR7I+Nk6gp7p5TMA4ycgfxaZBJ7MO5iC3Fp6ySQyKFHOGfpkSZkYVWV5R7u7cfAicxanwYQ5D1e17EfJcMA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Dynamic Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h3>Dynamic Form</h3>
+    </header>
+
+    <div class="container">
+        <form action="" method="post" id="dynamic_form">
+            <div class="heading">
+                <h3>Form Heading</h3>
+                <input id="addFields" type="button" value="Add more Fields">
+            </div>
+
+            <div class="row">
+                <input type="text" name="key[]" placeholder="Key" id="key">
+                <select name="dataType[]" id="dataType" onchange="on_change()">
+                    <option disabled selected>Data Type</option>
+                    <option value="text">Text</option>
+                    <option value="number">Number</option>
+                    <option value="tel">Telephone</option>
+                    <option value="email">Email</option>
+                    <option value="list">List</option>
+                    <option value="map">Map</option>
+                    <option value="boolean">Boolean</option>
+                    <option value="form">Form</option>
+                </select>
+                <input type="text" name="value[]" placeholder="Value" id="key_value">
+                <a id="disabled" class="delRow" onclick="cant_delete()">&times;</a>
+            </div>
+            
+            <input id="submit" type="submit" value="SUBMIT">
+        </form>
+
+        
+    
+            
+        
+       
+    </div>
+   
+    
+<script src="app.js"></script>
+</body>
+</html>
